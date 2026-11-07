@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://wmysghc77wxm" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://hxkla87qfhev" path="res://scenes/killzone.tscn" id="4_lbhrr"]
 [ext_resource type="FontFile" uid="uid://bsdhixrpu8csw" path="res://assests/fonts/PixelOperator8.ttf" id="5_iywne"]
-[ext_resource type="AudioStream" uid="uid://pa5mviy6xtbr" path="res://assests/music/music.wav" id="6_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
 texture = ExtResource("2_yqjtg")
@@ -504,7 +503,3 @@ theme_override_fonts/font = ExtResource("5_iywne")
 theme_override_font_sizes/font_size = 11
 text = "He has Shattered 
 the heavens"
-
-[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1540204569]
-stream = ExtResource("6_p57ef")
-autoplay = true
