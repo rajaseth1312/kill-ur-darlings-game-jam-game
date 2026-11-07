@@ -1,0 +1,18 @@
+# Godot 4.x & 3.x specific ignores
+.godot/
+.import/
+export_presets.cfg
+
+# Imported translation files
+*.translation
+
+# Mono / C# specific builds (if using C#)
+.mono/
+data_*/
+mono_crash.*.json
+*.csproj
+*.sln
+
+# Operating system files
+.DS_Store
+Thumbs.db
