@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://wmysghc77wxm" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://hxkla87qfhev" path="res://scenes/killzone.tscn" id="4_lbhrr"]
 [ext_resource type="FontFile" uid="uid://bsdhixrpu8csw" path="res://assests/fonts/PixelOperator8.ttf" id="5_iywne"]
+[ext_resource type="AudioStream" uid="uid://pa5mviy6xtbr" path="res://assests/music/music.wav" id="6_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
 texture = ExtResource("2_yqjtg")
@@ -402,6 +403,16 @@ theme_override_fonts/font = ExtResource("5_iywne")
 theme_override_font_sizes/font_size = 11
 text = "WASD and Space"
 
+[node name="Label6" type="Label" parent="labels" unique_id=669583356]
+offset_left = 353.0
+offset_top = -43.0
+offset_right = 482.0
+offset_bottom = -20.0
+theme_override_fonts/font = ExtResource("5_iywne")
+theme_override_font_sizes/font_size = 11
+text = "Its the sound of the heavens breaking
+------------ BE QUICK -----------------"
+
 [node name="Label4" type="Label" parent="labels" unique_id=116702030]
 offset_left = -91.0
 offset_top = -133.0
@@ -465,6 +476,15 @@ theme_override_fonts/font = ExtResource("5_iywne")
 theme_override_font_sizes/font_size = 11
 text = "God mocks u"
 
+[node name="Label7" type="Label" parent="labels" unique_id=149243056]
+offset_left = 1006.0
+offset_top = -62.0
+offset_right = 1135.0
+offset_bottom = -39.0
+theme_override_fonts/font = ExtResource("5_iywne")
+theme_override_font_sizes/font_size = 11
+text = "Press Space before WASD"
+
 [node name="Label3" type="Label" parent="labels" unique_id=48211548]
 offset_left = 1399.0
 offset_top = -209.0
@@ -484,3 +504,7 @@ theme_override_fonts/font = ExtResource("5_iywne")
 theme_override_font_sizes/font_size = 11
 text = "He has Shattered 
 the heavens"
+
+[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1540204569]
+stream = ExtResource("6_p57ef")
+autoplay = true
